@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    
+    <title>iOS系统音量&amp;屏幕亮度调节 | Fighting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="一，系统音量获取系统框架123#import &amp;lt;AVFoundation/AVFoundation.h&amp;gt;#import &amp;lt;MediaPlayer/MediaPlayer.h&amp;gt;#import &amp;lt;AVKit/AVKit.h&amp;gt; 获取系统音量slider1234567891011121314- (MPVolumeView *)volumeView &amp;#123;    i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS系统音量&amp;屏幕亮度调节">
+<meta property="og:url" content="http://yoursite.com/2017/10/12/iOS系统音量-屏幕亮度调节/index.html">
+<meta property="og:site_name" content="Fighting">
+<meta property="og:description" content="一，系统音量获取系统框架123#import &amp;lt;AVFoundation/AVFoundation.h&amp;gt;#import &amp;lt;MediaPlayer/MediaPlayer.h&amp;gt;#import &amp;lt;AVKit/AVKit.h&amp;gt; 获取系统音量slider1234567891011121314- (MPVolumeView *)volumeView &amp;#123;    i">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/shoes.jpg">
+<meta property="og:updated_time" content="2017-10-13T03:01:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iOS系统音量&amp;屏幕亮度调节">
+<meta name="twitter:description" content="一，系统音量获取系统框架123#import &amp;lt;AVFoundation/AVFoundation.h&amp;gt;#import &amp;lt;MediaPlayer/MediaPlayer.h&amp;gt;#import &amp;lt;AVKit/AVKit.h&amp;gt; 获取系统音量slider1234567891011121314- (MPVolumeView *)volumeView &amp;#123;    i">
+<meta name="twitter:image" content="http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/shoes.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="Fighting" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/css/images/favicon.jpg" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Fighting</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png" />
+            <h2 id="name">Zhouheng</h2>
+            <h3 id="title">iOS Developer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Beijing, China</span>
+            <a id="follow" target="_blank" href="https://github.com/OSzhou">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                6
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                0
+                <span>tag</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/OSzhou/OSzhou.github.io" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class=tooltip>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="facebook" class=tooltip>
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class=tooltip>
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class=tooltip>
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-iOS系统音量-屏幕亮度调节" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<img src="http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/shoes.jpg" class="article-banner" />
+	
+
+
+
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            iOS系统音量&amp;屏幕亮度调节
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/10/12/iOS系统音量-屏幕亮度调节/">
+            <time datetime="2017-10-12T07:35:14.000Z" itemprop="datePublished">2017-10-12</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h5 id="一，系统音量获取"><a href="#一，系统音量获取" class="headerlink" title="一，系统音量获取"></a>一，系统音量获取</h5><p>系统框架<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#import &lt;AVFoundation/AVFoundation.h&gt;</div><div class="line">#import &lt;MediaPlayer/MediaPlayer.h&gt;</div><div class="line">#import &lt;AVKit/AVKit.h&gt;</div></pre></td></tr></table></figure></p>
+<p>获取系统音量slider<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">- (MPVolumeView *)volumeView &#123;</div><div class="line">    if (_volumeView == nil) &#123;</div><div class="line">        _volumeView  = [[MPVolumeView alloc] init];</div><div class="line">        [_volumeView sizeToFit];</div><div class="line">#warning 获取系统的音量的UISlider</div><div class="line">        for (UIView *view in [_volumeView subviews])&#123;</div><div class="line">            if ([view.class.description isEqualToString:@&quot;MPVolumeSlider&quot;])&#123;</div><div class="line">                self.volumeViewSlider = (UISlider*)view;</div><div class="line">                break;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return _volumeView;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>监听系统物理按键调节音量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">/** 监听 */</div><div class="line">- (void)registerVolumeChangeEvent &#123;</div><div class="line">//    NSError *error;</div><div class="line">//    [[AVAudioSession sharedInstance] setActive:YES error:&amp;error];</div><div class="line">    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeVolumeValueFunc) name:@&quot;AVSystemController_SystemVolumeDidChangeNotification&quot; object:nil];</div><div class="line">&#125;</div><div class="line">/** 移除 */</div><div class="line">- (void)unregisterVolumeChangeEvent &#123;</div><div class="line">    [[NSNotificationCenter defaultCenter] removeObserver:self name:@&quot;AVSystemController_SystemVolumeDidChangeNotification&quot; object:nil];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>获取系统当前音量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[[AVAudioSession sharedInstance] outputVolume];</div></pre></td></tr></table></figure></p>
+<h5 id="二，屏幕亮度"><a href="#二，屏幕亮度" class="headerlink" title="二，屏幕亮度"></a>二，屏幕亮度</h5><p>很简单就一句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">[[UIScreen mainScreen] setBrightness:值（0 ~ 1）]</div><div class="line">//示例</div><div class="line">            if (panPoint.y &lt; 0) &#123;</div><div class="line">                //增加亮度</div><div class="line">                [[UIScreen mainScreen] setBrightness:self.startVB + (-panPoint.y / 30.0 / 10)];</div><div class="line">            &#125; else &#123;</div><div class="line">                //减少亮度</div><div class="line">                [[UIScreen mainScreen] setBrightness:self.startVB - (panPoint.y / 30.0 / 10)];</div><div class="line">            &#125;</div></pre></td></tr></table></figure>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yoursite.com/2017/10/12/iOS系统音量-屏幕亮度调节/" data-id="cj8pbzu0b00048afyowancbe9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/10/12/UIButton重复点击解决方案/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">UIButton重复点击解决方案</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/12/iOS系统音量-屏幕亮度调节/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/shoes.jpg)" alt="iOS系统音量&amp;屏幕亮度调节" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/10/12/iOS系统音量-屏幕亮度调节/" class="title">iOS系统音量&amp;屏幕亮度调节</a></p>
+                            <p class="item-date"><time datetime="2017-10-12T07:35:14.000Z" itemprop="datePublished">2017-10-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/12/UIButton重复点击解决方案/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/music2.jpg)" alt="UIButton重复点击解决方案" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/10/12/UIButton重复点击解决方案/" class="title">UIButton重复点击解决方案</a></p>
+                            <p class="item-date"><time datetime="2017-10-12T07:33:26.000Z" itemprop="datePublished">2017-10-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/12/类似“今日头条”频道编辑功能UI实现/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/salt-lake.jpg)" alt="类似“今日头条”频道编辑功能UI实现" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/10/12/类似“今日头条”频道编辑功能UI实现/" class="title">类似“今日头条”频道编辑功能UI实现</a></p>
+                            <p class="item-date"><time datetime="2017-10-12T07:32:08.000Z" itemprop="datePublished">2017-10-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/12/UICollectionView下拉刷新闪一下问题解决/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/niagara.jpg)" alt="UICollectionView下拉刷新闪一下问题解决" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/10/12/UICollectionView下拉刷新闪一下问题解决/" class="title">UICollectionView下拉刷新闪一下问题解决</a></p>
+                            <p class="item-date"><time datetime="2017-10-12T07:31:08.000Z" itemprop="datePublished">2017-10-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/12/WYYKTScroll控件悬停/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/math.jpg)" alt="WYYKTScroll控件悬停" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/10/12/WYYKTScroll控件悬停/" class="title">WYYKTScroll控件悬停</a></p>
+                            <p class="item-date"><time datetime="2017-10-12T07:25:30.000Z" itemprop="datePublished">2017-10-12</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">6</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://coding.net">Hosted by Coding Pages</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2017 Zhouheng<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
