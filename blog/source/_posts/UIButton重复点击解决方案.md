@@ -2,8 +2,10 @@
 banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/music2.jpg
 title: UIButton重复点击解决方案
 date: 2017-10-12 15:33:26
-tags:
+tags: UI
 thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/music2.jpg
+categories:
+- iOS开发
 ---
 ##### 项目需求，为了防止用户连续点击，造成重复请求，需要设置UIButton点击后，一段时间间隔内不能点击。这个做开发经常用到，在这小小总结下：
 

@@ -2,8 +2,10 @@
 banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/salt-lake.jpg
 title: 类似“今日头条”频道编辑功能UI实现
 date: 2017-10-12 15:32:08
-tags:
+tags: UI
 thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/salt-lake.jpg
+categories:
+- iOS开发
 ---
 # FMChannelEdit
 这是一个类似“今日头条”频道编辑功能

@@ -2,8 +2,10 @@
 banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/arabic-pyramid.jpg
 title: 如何利用pod trunk发布程序
 date: 2017-10-11 14:16:01
-tags:
+tags: tool
 thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/arabic-pyramid.jpg
+categories:
+- iOS开发
 ---
 refer to CoderMJLee
 ---

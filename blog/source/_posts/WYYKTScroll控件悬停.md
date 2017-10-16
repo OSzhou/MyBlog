@@ -2,8 +2,10 @@
 banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/math.jpg
 title: WYYKTScroll控件悬停
 date: 2017-10-12 15:25:30
-tags:
+tags: UI
 thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/math.jpg
+categories:
+- iOS开发
 ---
 #### 效果示例
 ![WYDemo2.gif](http://upload-images.jianshu.io/upload_images/2149459-53f2c26e6c7f08d7.gif?imageMogr2/auto-orient/strip)

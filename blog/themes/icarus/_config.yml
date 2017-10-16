@@ -75,7 +75,7 @@ comment:
     
 
 # Share
-share: default # options: jiathis, bdshare, addtoany, default
+share: jiathis # options: jiathis, bdshare, addtoany, default
 
 # Plugins
 plugins:
@@ -96,3 +96,4 @@ miscellaneous:
     links:
         Hexo: http://hexo.io
         Hosted by Coding Pages: https://coding.net
+        丰子恺撒: http://likecode.top

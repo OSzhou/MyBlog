@@ -2,8 +2,10 @@
 banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/niagara.jpg
 title: UICollectionView下拉刷新闪一下问题解决
 date: 2017-10-12 15:31:08
-tags:
+tags: UI
 thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/niagara.jpg
+categories:
+- iOS开发
 ---
 最近写项目遇到UICollectionView的下拉刷新数据回来时，屏幕会闪一下，在网上找了几个方法，亲自试了都不好使，后来自己试了下回主线程刷新UI，发现可以，代码如下:
 ````

@@ -2,8 +2,10 @@
 banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/shoes.jpg
 title: iOS系统音量&屏幕亮度调节
 date: 2017-10-12 15:35:14
-tags:
+tags: UI
 thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/shoes.jpg
+categories:
+- iOS开发
 ---
 ##### 一，系统音量获取
 系统框架
