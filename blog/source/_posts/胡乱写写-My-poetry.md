@@ -200,3 +200,13 @@ If I like you,I will take a few steps to  your direction forwardly and a few mor
 时间磨平了棱角，
 岁月消逝了朱颜。
                     --->18.3.7
+
+--- ---
+
+![life](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3524048467,1461102711&fm=27&gp=0.jpg)
+
+三尺微命
+一介布衣
+寄身于这天地间
+尚不能顾全自身冷暖
+凭何立室成家
