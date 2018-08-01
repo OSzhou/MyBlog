@@ -70,5 +70,23 @@ pod search WYTest
 pod "WYTest"
 pod install || pod update
 ````
+###2018.08.01更新
+####增加对UICollectionView的支持，controller必须继承自FMBaseCollectionViewController
+
+* 示例代码
+
+````
+    FMT1ViewController *t1 = [[FMT1ViewController alloc] init];
+    t1.tableViewStyle = FMTableViewStyleGrouped;
+    FMC1ViewController *c1 = [[FMC1ViewController alloc] init];
+    FMT3ViewController *t3= [[FMT3ViewController alloc] init];
+````
+
+#### 效果示例 - 全collectionView
+![collectionSupport1.gif](https://upload-images.jianshu.io/upload_images/2149459-81372f034ffad1fa.gif?imageMogr2/auto-orient/strip)
+
+#### 效果示例 - collectionView 和 tableView混合
+![collectionSupport.gif](https://upload-images.jianshu.io/upload_images/2149459-5e3a134d074774c1.gif?imageMogr2/auto-orient/strip)
+
 ##github Demo下载地址
 [点击去下载](https://github.com/OSzhou/WYYKTScroll.git)
