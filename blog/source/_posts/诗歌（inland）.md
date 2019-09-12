@@ -146,3 +146,14 @@ categories: favpoetry
 正如我悄悄的来；
 我挥一挥衣袖，
 不带走一片云彩。
+
+![天堂](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568285129158&di=4afe3a12906bce34b71c83d77439ec1a&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2Fdb21f49d21a71abd14a279b117dec86470fefd31.jpg)
+
+一个人需要隐藏多少秘密
+才能巧妙地度过一生
+这佛光点点的高原
+三步两步便是天堂
+却仍有那么多人
+因心事过重
+而走不动
+---仓央嘉措

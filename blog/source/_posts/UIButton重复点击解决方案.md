@@ -1,9 +1,9 @@
 ---
-banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/music2.jpg
+banner: https://upload-images.jianshu.io/upload_images/2149459-4b769954a3dfba5a.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 title: UIButton重复点击解决方案
 date: 2017-10-12 15:33:26
 tags: UI
-thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/music2.jpg
+thumbnail: https://upload-images.jianshu.io/upload_images/2149459-4b769954a3dfba5a.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 categories:
 - iOS开发
 ---

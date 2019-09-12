@@ -1,9 +1,9 @@
 ---
-banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/shoes.jpg
+banner: https://upload-images.jianshu.io/upload_images/2149459-983ff9bb19c5578e.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 title: iOS系统音量&屏幕亮度调节
 date: 2017-10-12 15:35:14
 tags: UI
-thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/shoes.jpg
+thumbnail: https://upload-images.jianshu.io/upload_images/2149459-983ff9bb19c5578e.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 categories:
 - iOS开发
 ---

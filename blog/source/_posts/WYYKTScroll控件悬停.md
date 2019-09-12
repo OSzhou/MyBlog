@@ -1,9 +1,9 @@
 ---
-banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/math.jpg
+banner: https://upload-images.jianshu.io/upload_images/2149459-f22a62c9363a0f2d.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 title: WYYKTScroll控件悬停
 date: 2017-10-12 15:25:30
 tags: UI
-thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/math.jpg
+thumbnail: https://upload-images.jianshu.io/upload_images/2149459-f22a62c9363a0f2d.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 categories:
 - iOS开发
 ---

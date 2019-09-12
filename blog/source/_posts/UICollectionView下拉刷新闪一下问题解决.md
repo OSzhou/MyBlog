@@ -1,9 +1,9 @@
 ---
-banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/niagara.jpg
+banner: https://upload-images.jianshu.io/upload_images/2149459-4562b897de66abe7.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 title: UICollectionView下拉刷新闪一下问题解决
 date: 2017-10-12 15:31:08
 tags: UI
-thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/niagara.jpg
+thumbnail: https://upload-images.jianshu.io/upload_images/2149459-4562b897de66abe7.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 categories:
 - iOS开发
 ---

@@ -1,9 +1,9 @@
 ---
-banner: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/salt-lake.jpg
+banner: https://upload-images.jianshu.io/upload_images/2149459-5970032112e1e663.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 title: 类似“今日头条”频道编辑功能UI实现
 date: 2017-10-12 15:32:08
 tags: UI
-thumbnail: http://blog.zhangruipeng.me/hexo-theme-icarus/gallery/salt-lake.jpg
+thumbnail: https://upload-images.jianshu.io/upload_images/2149459-5970032112e1e663.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1024/format/webp
 categories:
 - iOS开发
 ---
