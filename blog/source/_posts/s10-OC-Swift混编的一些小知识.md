@@ -1,14 +1,14 @@
 ---
 banner: /css/images/tree_01.jpg
 title: OC/Swift混编的一些小知识
-date: 2020-12-15 13:31:57
+date: 2019-04-15 20:31:57
 tags: Swift
 thumbnail: /css/images/tree_01.jpg
 categories:
 - iOS开发
 ---
 
-- ###Swift调用OC
+- ### Swift调用OC
 桥接头文件:
 >1.新建1个桥接头文件，文件名格式默认为:`{targetName}-Bridging-Header.h`
 2.在`{targetName}-Bridging-Header.h` 文件中#import OC需要暴露给Swift的内容
@@ -30,7 +30,7 @@ print(swift_sum(10, 20)) // 30
 print(sum(10, 20)) // 30
 ```
 <!--more-->
-- ###OC调用Swift
+- ### OC调用Swift
 >Xcode已经默认生成一个用于OC调用Swift的头文件，文件名格式是: `{targetName}-Swift.h`
 
 - Swift暴露给OC的类最终继承自NSObject 
